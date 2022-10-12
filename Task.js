@@ -95,3 +95,16 @@ let styles = (a) => {
   return a;
 };
 console.log(styles(["Джаз", "Блюз"]));
+
+// 3
+let styles = (a) => {
+  a.toString();
+  return a;
+};
+console.log(styles(["Джаз", "Блюз"]));
+
+let styles = (a) => {
+  a.join(", ");
+  return a;
+};
+console.log(styles(["Джаз", "Блюз"]));
