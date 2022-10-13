@@ -115,3 +115,44 @@ let styles = (a, n) => {
   return a.slice(0, n);
 };
 console.log(styles([1, 2, 3, 4, 5]));
+
+6;
+let styles = (a, n) => {
+  n = 1;
+  return a.splice(-1, n);
+};
+console.log(styles([1, 2, 3, 4, 5]));
+
+7;
+let styles = (a) => {
+  let sum = 0;
+  for (let b of a) {
+    sum += b;
+  }
+  return sum;
+};
+console.log(styles([1, 2, 3, 4, 5]));
+
+8;
+let styles = (a) => {
+  let sum = 0;
+  for (let b of a) {
+    sum += b * b;
+  }
+  return sum;
+};
+console.log(styles([1, 2, 3]));
+
+9;
+let styles = (a) => {
+  let ym = 1;
+  let sum = 0;
+  let g = 0;
+  for (let b of a) {
+    sum += b;
+    ym *= b;
+    g = sum + ym;
+  }
+  return g;
+};
+console.log(styles([2, 2, 3]));
