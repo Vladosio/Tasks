@@ -111,15 +111,13 @@ console.log(styles(["Джаз", "Блюз"]));
 
 // 5
 let styles = (a, n) => {
-  n = 2;
-  return a.slice(0, n);
+  return a.slice(0, (n = 2));
 };
 console.log(styles([1, 2, 3, 4, 5]));
 
 6;
 let styles = (a, n) => {
-  n = 1;
-  return a.splice(-1, n);
+  return a.splice(-1, (n = 1));
 };
 console.log(styles([1, 2, 3, 4, 5]));
 
